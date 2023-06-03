@@ -1,0 +1,18 @@
+/* Error: -16c0 and 32s have incompatible units.
+ *    ,
+ * 27 | $accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z"/></svg>/></svg>");
+ *    |                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   scss\_custom.scss 27:183  @use
+ *   scss\style.scss 1:1       root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: -16c0 and 32s have incompatible units.\a    \2577 \a 27 \2502  $accordion-button-icon:         url(\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d=\"M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z\"/></svg>/></svg>\");\d\a    \2502                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   scss\\_custom.scss 27:183  @use\a   scss\\style.scss 1:1       root stylesheet";
+}

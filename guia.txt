@@ -1,0 +1,43 @@
+PORTAFOLIO CON REACT, BOOSTRAP Y SCSS
+
+//             INSTALACION DE DEPENDENCIAS       //
+1. instalar react vite desde la pag
+
+2.instalo boostrap: DESDE REACT-BOOSTRAP
+a. npm install react-bootstrap bootstrap
+
+b. en el APP: 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+c.en el index.html
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+
+3. INSTALAR SASS
+ desde la pagina de vite: css-preprocesadores
+a. npm add -D sass
+b. creamos en el directorio raiz el style.scss y lo importamos en el main.jsx
+import './style.scss'
+
+////// PROYECTO PASO 1 ///
+
+DESPUES DE INSTALAR TODO NECESITAMOS EL FONTAWESOME
+
+PAQUETE GRAL: npm i --save @fortawesome/fontawesome-svg-core
+PAQUETE DE ICONOS: npm i --save @fortawesome/free-solid-svg-icons
+PAQUETE COMPONENTES: npm i --save @fortawesome/react-fontawesome@latest
+
+CREACION DE SCRIPTS PARA SASS
+en el package.json > scripts
+creamos un scripts que nos permite compilar sass a css
+    "compile:sass": "sass --watch scss:assets/css"
+    este watch lo que hace es observar continuamente los cambios en la carpeta
+    con ctrl-c lo paramos
+
+___________________ EMPEZAMOS CON LA CUSTOMIZACION DEL BOOSTRAP ___________________
+
+AHORA VAMOS A EDITAR LAS COSAS POR DEFECTO DE BOOSTRAP, DENTRO DE SCSS CREAMOS LA CARPETA CUSTOM.SCSS Y LA LLAMAMOS EN EL STYLE.SCSS CON @USE 'CUSTOM'
+
+         COMO ANULAR:
+desde el archivo original de node, vamos a seleccionar las variables y seleccionamos los colores que queremos utilizar y le borranos el !default;
+
+
