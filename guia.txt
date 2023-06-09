@@ -40,4 +40,51 @@ AHORA VAMOS A EDITAR LAS COSAS POR DEFECTO DE BOOSTRAP, DENTRO DE SCSS CREAMOS L
          COMO ANULAR:
 desde el archivo original de node, vamos a seleccionar las variables y seleccionamos los colores que queremos utilizar y le borranos el !default;
 
+//   PASO 3: CREACION DE COMPONENTES Y SECCIONES  //
+
+DENTRO DE SCSS CREAMOS seccion y componentes
+
+dentro de componentes --> _button.scss
+                          _animations.scss
+                          _mixins.scss
+                          _typography.scss
+            
+dentro de sections   --> _navbar.scss
+                     --> _intro-sections.scss
+                     --> _companies.scss
+                     --> _services.scss
+                     --> _testimonials.scss
+                     --> faq.scss -- preguntas mas frecuentes
+                     --> getstarted.scss
+                     --> footer.scss
+
+..> AHORA UNA VEZ QUE TENEMOS TODO LO SIGUIENTE ES IMPORTALOS AL STYLE.SCSS
+
+// PARTE 4: NAVBAR //
+
+1. cambiamos el container-fluid por container
+*(esto hace que se le agrege un padding right y left de forma simetrica y automatica)
+2. cambiamos el bg a bg-primary
+3. justificamos el contenido de la barra, se hace en collapse navbar-collapse, justify-content-end
+4. se agrega el logo en la navbar este va a ser una imagen --> CREAR logo
+5. agregamos las secciones que faltan y creamos en el ultimo el boton para el numero de tefono
+            <button type="button" className="rounded-pill">+341 123 45678</button>
+
+6. AL NAVBAR.SCSS "CREACION DE ESTILOS" 
+
+en el navbar.scss
+1. importamos el @use custom as * para que se aplique a toda la plantilla
+2. creamos la clase .menu, para que la barra y vamos anidado los elementos y dandole sus caracteristicas
+
+3. creamos el degradez de color de fondo, esto es un mixins ya que se va a volver a utilizar para eso:
+recortamos el gradiente creado en navar y lo llevamos al mixmin, para que estow funcione hay que importar con el use, en el mixmin todas las variables custom y en el navbar traer el mixins y usarlo con elementos @incluse gradient
+
+... BOTONES ....
+dentro del boton agregamos el mixins ya que vamos a usar el color degradado con el hover, el & signifca que vamos a afectar al primer elemento que esta encapsulado en las llaves
+
+/...........MEDIAS QUERY....
+//PARA LA VISTA DESDE UN TELEFONO
+usamos las medias query que boostrap ya nos concluye, lo que queremos es quitar el boton cuando la pantalla esta modo celular, entonces para eso
+en el
+       BOTON: @incluse media-breakpoint-down(porque es un dispositivo pequeno, sino es up)(-sm) {lo que queremos que haga}
 

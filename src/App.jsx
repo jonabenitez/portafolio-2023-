@@ -1,14 +1,17 @@
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "../components/Navbar";
-import ButtonAcordeon from '../components/Button-acordeon'
+import ButtonAcordeon from "../my-components/Button-acordeon";
+import ToggleElement from "../my-components/prueba";
+import Home from '../my-components/navbar2'
 
 function App() {
   return (
     <>
-      <Home />
+    <Home/>
+      <ButtonAcordeon />
+      <ButtonAcordeon />
       <ButtonAcordeon />
 
+      <ToggleElement />
     </>
   );
 }
