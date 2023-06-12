@@ -88,3 +88,13 @@ usamos las medias query que boostrap ya nos concluye, lo que queremos es quitar 
 en el
        BOTON: @incluse media-breakpoint-down(porque es un dispositivo pequeno, sino es up)(-sm) {lo que queremos que haga}
 
+
+/// CREACION DE SECCION 1 /////
+1) CREAMOS UN NUEVO COMPONENTE DONDE EL CUAL VA A ESTAR FORMADO POR UN DIV MAYOR TIPO ROW Y DENTRO DE ESTE VA A TENER 2 COLUMNAS FORMADAS X 2 DIV
+2) CREAMOS UN H1 CON UN DISPLAY-2 tipo y tamano de frecuentes
+3) estos --intro son como ramas del display-2 que nos permite darle un estilo personal a cada uno
+
+4) dentro de las _typography es donde lo vamos a usar, dandole un diseno en bloque a cada uno.
+5) GOOGLE FONTS: USAMOS POPPINS
+//    text-transform: none; evita mayusculas en todo el texto, salvo la de los inicios.
+//    lh-lg: el interlineado grande
