@@ -1,9 +1,11 @@
 // IMPORTANTE!! PARA QUE ESTO FUNCIONE HAY QUE IMPORTAR EL ARCHIVO DONDE SE GUARDAN LAS VARIABLES O LO QUE VAYAMOS A USER, el as * es para quese asignen todos los estilos o variables definidas en el custom dentro de este archivo y asi no llamar uno por a todos;
+
+// IMPORT MODULES//
 @use "../custom" as *;
 @use "../components/mixins" as *;
 
 //creamos una nueva clase para la navbar llamada "menu"
-// primero vamos a ponerle un background degragado
+// primero vamos a ponerle un background degragado, traido desde el mixins
 .menu {
   @include gradient;
 
@@ -16,7 +18,8 @@
       padding: 1.57rem 1rem 0rem 1rem;
 
       a {
-        padding: 0 0.7rem; // 0 para lo superior e inferior, 0,7 para izq y dere.
+        padding: 0 0.7rem; 
+        // 0 para lo superior e inferior, 0,7 para izq y dere.
         color: $white;
         text-transform: capitalize;
         font-weight: 600;
@@ -24,3 +27,4 @@
     }
   }
 }
+

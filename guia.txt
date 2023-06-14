@@ -35,14 +35,18 @@ creamos un scripts que nos permite compilar sass a css
 
 ___________________ EMPEZAMOS CON LA CUSTOMIZACION DEL BOOSTRAP ___________________
 
-AHORA VAMOS A EDITAR LAS COSAS POR DEFECTO DE BOOSTRAP, DENTRO DE SCSS CREAMOS LA CARPETA CUSTOM.SCSS Y LA LLAMAMOS EN EL STYLE.SCSS CON @USE 'CUSTOM'
+AHORA VAMOS A EDITAR LAS COSAS POR DEFECTO DE BOOSTRAP, DENTRO DE SCSS -->  CREAMOS EL ARCHIVO EL  _CUSTOM.SCSS Y 
+, ESTE CUSTOM VA A TENER TODO LO QUE VAMOS A USAR DE BOOSTRAP, COPIANDO DESDE EL ARVHIDO DE NODE_MODULES.
 
-         COMO ANULAR:
-desde el archivo original de node, vamos a seleccionar las variables y seleccionamos los colores que queremos utilizar y le borranos el !default;
+UNA VEZ QUE LO TENGO COMPLETO, LO VOY A  LLAMAR EN EL STYLE.SCSS CON @USE 'CUSTOM'
+
+
+    COMO ANULAR:
+desde el archivo original de node, vamos a seleccionar las variables y seleccionamos los colores que queremos utilizar y le borramos el !default;
 
 //   PASO 3: CREACION DE COMPONENTES Y SECCIONES  //
 
-DENTRO DE SCSS CREAMOS seccion y componentes
+DENTRO DE SCSS CREAMOS LAS CARPETAS: seccion y componentes.
 
 dentro de componentes --> _button.scss
                           _animations.scss
@@ -98,3 +102,29 @@ en el
 5) GOOGLE FONTS: USAMOS POPPINS
 //    text-transform: none; evita mayusculas en todo el texto, salvo la de los inicios.
 //    lh-lg: el interlineado grande
+
+// CREACION DEL BOTON DE VIDEO.
+
+1. dentro de la segunda columna creamos el div con class video-box.
+2. agregamos la imagen de fondo y le ponenmos text-end para que se alinea horizontalmente al final.
+
+//BOTON START//
+DENTRO CREAMOS UN SPAN Y UN I DONDE IMPORTAMOS EL ICONO.
+
+// CREAMOS UN mixins: @absoluteCenter que nos va a centrar el medio cualquier icono y podemos reutilizarlo
+
+despues vamos a poner esta misma propiedad pero en el html del A
+
+position-absolute top-50 start-50 translate-middle === al mixin
+
+//CREACION DE LA OLA DE FINAL DEL LA SECCION//
+
+--+ DESDE: getwaves.io
+
+se descarga y se copia el codigo
+
+// ANIMACION DE LOS BORDES //
+
+creamos la clase border-animation, esta clase va a ser un span que va a ser un circulo del tamano del icono y su misma posicion y a este vamos a animar
+
+EN ANIMATION.SCSS

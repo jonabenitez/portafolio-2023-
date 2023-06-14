@@ -1,0 +1,14 @@
+// PULSE BORDER
+
+@keyframes pulse-border {
+  //desde 0 vamos a escalarlo a 1 desde 1 hasta 100
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  // desde 100 al 200
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
