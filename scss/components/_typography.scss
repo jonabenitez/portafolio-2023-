@@ -19,3 +19,28 @@
     text-transform: none;
   }
 }
+
+//HEADING LINE
+// primary line
+.heading-line::before{
+  content:"";
+  width:14rem;
+  height: 0.2rem;
+  display: block;
+  //sin el display block, esta linea no aparece, el display le otorga un elemento invisible, que me va a hacer aparecer bordes
+  margin: 0 auto;
+  background: $primary;
+}
+
+//secundary line
+.heading-line::after{
+  content:"";
+  width:3rem;
+  padding-top: 0.4rem;
+  margin-bottom: 20rem;
+  height:0.1rem;
+  display: block;
+  margin: 0 auto; //0 margenes sup e inf y auto, una distribucion igual de lados para que quede centrado
+  background: $primary;
+  
+}

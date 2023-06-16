@@ -128,3 +128,37 @@ se descarga y se copia el codigo
 creamos la clase border-animation, esta clase va a ser un span que va a ser un circulo del tamano del icono y su misma posicion y a este vamos a animar
 
 EN ANIMATION.SCSS
+
+/......................................................../
+
+// COMPANIES//
+
+creamos la seccion con una vista desde dentro hacia afuera, un titulo, dentro de un div, dentro de otro div, estos 2 nos sirven para la linea de fondo esa especie de subrayado
+y para contener las tecnologias que despues agregamos.
+
+para el subrayado:
+
+
+
+
+const cargarImagenes = () => {
+  const imagenes = [];
+  // se crea un array de imagenes q vamos a llenar
+
+  const context = require.context("./img", false, /\.(png|jpe?g|svg)$/);
+
+  context.keys().forEach((ruta) => {
+    imagenes.push(context(ruta));
+    //la funcion context.keys() devuelve esas keys pero con las rutas relativas que va a usar, y luego se recorre el array de rutas, asi obtener la ruta completa de la imagen, y luego se agrega al array esas rutas
+  });
+};
+
+const imagenes = cargarImagenes();
+
+function prueba() {
+  return (
+    <div>
+      <img key="{index}" src="{imagen}" alt="{imagen}" />
+    </div>
+  );
+}
