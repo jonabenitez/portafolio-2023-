@@ -1,10 +1,20 @@
-.container{
-    .campanies{
-    text-align: center;
-    }
-    img{
-    height: 10rem;;
-    width: 12rem;
-    }
 
+
+.campanies{
+    padding: 0rem 0 5rem 0;
+
+    &__logo-box{
+        //establecemos los limites de la caja de los logos
+        max-width: 100%;//ponemos un maximo para que nos e deforme el
+        height: 8rem;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        text-align: center; 
+        position: relative;
+        
+        img{
+            height: 100%;
+            
+        }
+    }
 }

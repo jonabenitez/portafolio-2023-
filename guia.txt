@@ -133,32 +133,69 @@ EN ANIMATION.SCSS
 
 // COMPANIES//
 
-creamos la seccion con una vista desde dentro hacia afuera, un titulo, dentro de un div, dentro de otro div, estos 2 nos sirven para la linea de fondo esa especie de subrayado
-y para contener las tecnologias que despues agregamos.
-
-para el subrayado:
+para el titulo, vamos a crear 
 
 
 
+    <div className="container"> el contenedor
+        <div className="text-center"> el que va a centrar todo
+          <h4>Tecnologias hasta el momento</h4> titulo
+          <div className="heading-line"></div> subrayado
+        </div>
+      </div>
 
-const cargarImagenes = () => {
-  const imagenes = [];
-  // se crea un array de imagenes q vamos a llenar
+el titulo centrado por el div con la clase text center
+el div de las lineas:
 
-  const context = require.context("./img", false, /\.(png|jpe?g|svg)$/);
+.heading-line::before{ == a por debajo de la caja
+  content:""; == contenido vacio
+  width:14rem; == este es el largo de la linea de subrayado
+  height: 0.2rem; == este ela ncho
+  display: block;
+  //sin el display block, esta linea no aparece, el display le otorga un elemento invisible, que me va a hacer aparecer bordes
+  margin: 0 auto; 
+  background: $primary;
+}
 
-  context.keys().forEach((ruta) => {
-    imagenes.push(context(ruta));
-    //la funcion context.keys() devuelve esas keys pero con las rutas relativas que va a usar, y luego se recorre el array de rutas, asi obtener la ruta completa de la imagen, y luego se agrega al array esas rutas
-  });
-};
+PARA LAS IMAGENES, MUY IMPORTANTE, USAR ROW!!
+el row me los va a linear el filas, 
 
-const imagenes = cargarImagenes();
+  <div className="container">
+        <div className="row"> // me da las finlas
 
-function prueba() {
-  return (
-    <div>
-      <img key="{index}" src="{imagen}" alt="{imagen}" />
-    </div>
-  );
+****
+          <div className="col-md-4"> // con el md (que es dispositivos medios) y el 4 (va a ocular el 33,33 de la pantalla)
+            <div className="campanies__logo-box">
+              <img src={BaseImg[0].img} alt="" />
+            </div>
+****
+         </div>
+
+y dentro de ese div entre *** se va encontrar cada elemento, si tengo 5 creo 5 dentro del div row.
+
+// una vez  que las tenemos cargadas es momento de acomodarlas.
+
+.campanies{
+    padding: 0 0 5rem 0;
+    pt 0
+    pr-0
+    pb-5
+    pl-0
+
+
+
+  Establecemos los limites de la caja de los logos:
+
+    &__logo-box{
+        max-width: 100%;
+        ponemos un maximo para que nos e deforme el logo
+        height: 8rem;
+        text-align:center // los alineamos en el medio de la caja
+
+        img{
+            height: 100%;
+            le indicamos a la imagen que ocupe el 100% de esta caja
+            
+        }
+    }
 }
