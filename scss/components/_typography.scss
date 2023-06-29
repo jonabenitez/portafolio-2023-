@@ -5,8 +5,7 @@
   margin-top: 1rem;
   text-transform: capitalize;
   font-family: 'Poppins', sans-serif;
-
-
+  
   &--intro {
     display: inline-block;
     font-weight: 700;
@@ -43,4 +42,16 @@
   margin: 0 auto; //0 margenes sup e inf y auto, una distribucion igual de lados para que quede centrado
   background: $primary;
   
+}
+
+
+.display-3 {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.50rem   ;
+}
+
+.border-right{
+  border-right: 0.2rem solid $gray-300;
 }

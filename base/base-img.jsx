@@ -5,6 +5,7 @@ import react from "../img/tecnologies/react.png";
 import redux from "../img/tecnologies/redux.png";
 import sass from "../img/tecnologies/sass.png";
 import tailwild from "../img/tecnologies/tailwindcss.png";
+import figma from "../img/tecnologies/figma.png";
 
 const BaseImg = [
   {
@@ -38,6 +39,12 @@ const BaseImg = [
   {
     date: 6,
     img: sass,
+  },
+
+  
+  {
+    date: 7,
+    img: figma,
   },
 ];
 
