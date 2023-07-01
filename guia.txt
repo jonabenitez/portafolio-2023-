@@ -203,4 +203,26 @@ y dentro de ese div entre *** se va encontrar cada elemento, si tengo 5 creo 5 d
 
 
 //// SECCION ABOUT ME ///
+recordar que cuando divido la grilla, dentro de las divisiones principales no va nada, se crea otro div o otro contenedor
 
+
+            <div className="row pt-2 pb-2 mt-5 mb-3">
+            ** ACA NO VA NADA**
+              <div className="col-md-6 border-right">
+              **ACA TAMPOCO VA NADA**
+
+                <p className="fw-bold text-center display-6">
+                // ACA SE CREO UN P PARA QUE ESTE DENTRO DEL DIV COL.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio .
+                </p>
+              </div>
+              
+              <div className="col-md-6">
+                <p className="fw-light text-start">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Placeat, numquam libero veritatis possimus magni autem, vitae
+                  dolor illum nisi asperiores commodi modi quam excepturi id
+                  incidunt harum voluptatem assumenda tenetur.
+                </p>
+              </div>
