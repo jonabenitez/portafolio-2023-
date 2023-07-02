@@ -226,3 +226,28 @@ recordar que cuando divido la grilla, dentro de las divisiones principales no va
                   incidunt harum voluptatem assumenda tenetur.
                 </p>
               </div>
+
+
+/// para los proyectos creamos 1 row con 2 col6 adentro con las medidas correspondientes para los breackpoint
+
+despues modificamos en el proyects scss algunos aspectos visuales
+
+dentro de la tipografia, para los titulos usamos display-3 que ya lo usamos antes pero al agregarle algunas propiedades lo llamamos display-3--title
+que se extiende y le agregamos lo SIGUIENTE
+  //my proyects-h3
+  &--title {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block; // el display inline block sirve para que sea un elemento en linea con propiedades de un elemento block, como ancho y alto.
+    //COMO PONER LOS TITULOS CON DEGRADEZ
+     background-image: linear-gradient(to right,$primary,$secondary);    1. SE AGREGA EL COLOR DEGRADADO DE FONDO
+    -webkit-background-clip: text;                                       2. SE USA EL BG-CLIP:TEXT, QUE ESTE HACE UN RECORTE CON EL COLOR DEL FONDO Y LA FORMA DE LA LETRAS
+    -webkit-text-fill-color: transparent;                                3. Y EL TEXT-FILL-COLOR: HACE EL COLOR DEL TEXTO TRANPARENTE PARA Q SE VEA EL RECORTE
+  }
+}
+
+DIFERENCIA ENTRE DISPLAY INLINEBLOCK Y block
+INLINE-BLOCK 
+ no ocupan todo el ancho disponible en su contenedor, sino que se ajustan al contenido que contienen. Esto significa que varios elementos con display: inline-block pueden aparecer en la misma línea, uno al lado del otro, si hay espacio suficiente.
