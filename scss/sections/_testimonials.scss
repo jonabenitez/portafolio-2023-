@@ -1,1 +1,8 @@
-    
+@use "../_custom.scss" as *;
+@use "../components/mixins" as *;
+
+.testimonials{
+    position: relative;
+    padding: 0;
+    @include gradient;
+}

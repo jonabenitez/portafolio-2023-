@@ -16,10 +16,10 @@ const ColorGame = <FontAwesomeIcon icon={faTableCellsLarge} />;
 function MyProyects() {
   return (
     <section id="proyects" className="services">
-      <div className="row text-center">
-        <h3 className="display-3 fw-bold">my Proyects</h3>
-        <div className="heading-line"></div>
-      </div>
+        <div className="row text-center">
+          <h3 className="display-3 fw-bold">my Proyects</h3>
+          <div className="heading-line"></div>
+        </div>
 
       {/**section 1- websitex */}
       <div className="container">

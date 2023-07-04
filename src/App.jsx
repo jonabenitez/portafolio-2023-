@@ -6,7 +6,7 @@ import Section1 from "../my-components/Intro-section";
 import Tecnologies from "../my-components/Tecnologies";
 import Aboutme from "../my-components/About-me";
 import MyProyects from "../my-components/MyProyects";
-
+import Testimonials from '../my-components/Testimonials'
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
       <Tecnologies />
       <Aboutme />
       <MyProyects/>
+      <Testimonials/>
     </>
   );
 }
