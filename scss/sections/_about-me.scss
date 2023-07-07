@@ -1,0 +1,7 @@
+@use "../_custom.scss" as *;
+
+.p-border{
+  @include media-breakpoint-up(lg){
+    border-right: rgb(223, 223, 223) solid 0.2rem;;
+  }
+}   

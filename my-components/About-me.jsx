@@ -9,8 +9,8 @@ function Aboutme() {
           {/*DESCRIPTIONS COLUMS */}
           <div className="container">
             <div className="row pt-2 pb-2 mt-5 mb-3">
-              <div className="col-md-6 border-right">
-                <p className="fw-bold text-center display-6">
+              <div className="col-md-6">
+                <p className="p-border fw-bold text-center display-6">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Distinctio .
                 </p>

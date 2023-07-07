@@ -1,9 +1,16 @@
 import Carousel from "react-bootstrap/Carousel";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteLeft } from "@fortawesome/free-solid-svg-icons";
+import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
-const iconStar = <FontAwesomeIcon icon={faStar} />
+import client1 from "../img/testimonials/client-1.jpg";
+import client2 from "../img/testimonials/client-2.jpg";
+import client3 from "../img/testimonials/client-3.jpg";
 
+const iconStar = <FontAwesomeIcon icon={faStar} />;
+const quoteLeft = <FontAwesomeIcon icon={faQuoteLeft} />;
+const quoteRight = <FontAwesomeIcon icon={faQuoteRight} />;
 
 const waveDown = (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -27,43 +34,120 @@ function Testimonials() {
   return (
     <div className="container-fluid testimonials">
       {waveUp}
-      {/**TITLE */}
       <div className="row text-center text-white">
         <h3 className="display-3 fw-bold">Testimonials</h3>
         <div className="heading-line2 mx-auto"></div>
         <p className="lead pt-1">What out clients are saying</p>
-        <div className="ratings col">
-        <i>{iconStar}</i>
-        <i>{iconStar}</i>
-        <i>{iconStar}</i>
-        <i>{iconStar}</i>
-        <i>{iconStar}</i>
-        </div>
       </div>
 
       {/**CAROUSEL */}
 
-      <div className="row align-items-center">
-        <Carousel>
-          <Carousel.Item>
-            <Carousel.Caption>
-                <div className="testimonials__card">
-                    <p className="lh-lg"></p>
-                </div>
-                <div className="testimonials__picture"></div>
-                <div className="testimonials__name"></div>
+      <Carousel className="container">
+        <Carousel.Item>
+          {/**CLIENT 1 */}
+          <div className="testimonials__card">
+            <p>
+              <i>{quoteLeft}</i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+              necessitatibus autem atque natus neque commodi dolorum, nulla
+              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
+              repellat natus excepturi aut.
+              <i>{quoteRight}</i>
+            </p>
+            <div className="ratings col p-1">
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+            </div>
+          </div>
+          {/**client-img */}
+          <div className="first-slide">
+            <div className="testimonials__picture">
+              <img
+                src={client1}
+                alt="client1"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          {/**client-name */}
+          <div className="testimonials__name">
+            <h3>Luz Diaz</h3>
+            <p className="lead fw-light">marketing managger</p>
+          </div>
+        </Carousel.Item>
 
-            </Carousel.Caption>
-          </Carousel.Item>
+        {/**CLIENT 2 */}
+        <Carousel.Item>
+          <div className="testimonials__card">
+            <p>
+              <i>{quoteLeft}</i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+              necessitatibus autem atque natus neque commodi dolorum, nulla
+              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
+              repellat natus excepturi aut.
+              <i>{quoteRight}</i>
+            </p>
+            <div className="ratings col p-1">
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+            </div>
+          </div>
+          {/**client-img */}
+          <div className="first-slide">
+            <div className="testimonials__picture">
+              <img
+                src={client2}
+                alt="client2"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          {/**client-name */}
+          <div className="testimonials__name">
+          <h3>Martin Benitez</h3>
+          <p className="lead fw-light"> CEO & founder </p>
+          </div>
+        </Carousel.Item>
 
-          <Carousel.Item>
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <Carousel.Caption></Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
-      </div>
+        {/**CLIENT 3 */}
+        <Carousel.Item>
+          <div className="testimonials__card">
+            <p>
+              <i>{quoteLeft}</i>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
+              necessitatibus autem atque natus neque commodi dolorum, nulla
+              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
+              repellat natus excepturi aut.
+              <i>{quoteRight}</i>
+            </p>
+            <div className="ratings col p-1">
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+              <i>{iconStar}</i>
+            </div>
+          </div>
+          {/**client-img */}
+          <div className="first-slide">
+            <div className="testimonials__picture">
+              <img
+                src={client3}
+                alt="client3"
+                className="img-fluid rounded-circle"
+              />
+            </div>
+          </div>
+          {/**client-name */}
+          <div className="testimonials__name">
+          <h3>Luz Diaz</h3>
+          <p className="lead fw-light">global brand managger </p>
+          </div>
+        </Carousel.Item>
+      </Carousel>
       {waveDown}
     </div>
   );

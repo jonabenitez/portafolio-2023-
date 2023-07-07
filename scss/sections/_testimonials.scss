@@ -1,8 +1,53 @@
 @use "../_custom.scss" as *;
 @use "../components/mixins" as *;
 
-.testimonials{
-    position: relative;
-    padding: 0;
-    @include gradient;
+.testimonials {
+  position: relative;
+  padding: 0;
+  @include gradient;
+
+  &__card {
+    background-color: rgba($color: $white, $alpha: 0.8);
+    padding: 2rem 1.25rem;
+    border-radius: 0.6rem;
+    height: auto;
+    text-align: center;
+
+    i {
+      font-size: 1.5rem;
+      color: rgba($color: $primary, $alpha: 0.7);
+    }
+  }
+
+  .ratings {
+    i {
+      color: rgba($color: $primary, $alpha: 0.7);
+    }
+    font-size: 1rem;
+  }
+
+  &__picture {
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    left: 50%;
+    transform: translate(-50%, -35%);
+
+    img{
+        border: 0.32rem solid rgba($color: $primary, $alpha: 0.7);
+    }
+  }
+
+  &__name {
+    padding-top: 3.2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+    color: rgba($color: $white, $alpha: 1);
+
+    h3{text-transform: capitalize;}
+
+    p{padding: 2rem;
+    text-transform: capitalize;}
+  }
 }
