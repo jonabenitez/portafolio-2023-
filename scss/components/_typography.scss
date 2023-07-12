@@ -49,6 +49,24 @@
   width: 8rem;
   height: 0.2rem;
   background: gray;
+}
+
+.heading-line3::before{
+  display: block;
+  content: "";
+  background: $primary;
+  margin: 0 auto;
+  height: 0.2rem;
+  width: 10rem;
+}
+
+.heading-line3::after{
+  display: block;
+  content: '';
+  background-color: $primary;
+  margin: 0 auto;
+  height: 0.3rem;
+  width: 2rem;
 
 }
 

@@ -7,7 +7,7 @@ import Tecnologies from "../my-components/Tecnologies";
 import Aboutme from "../my-components/About-me";
 import MyProyects from "../my-components/MyProyects";
 import Testimonials from '../my-components/Testimonials'
-
+import Faq from '../my-components/Faq'
 function App() {
   return (
     <>
@@ -17,6 +17,7 @@ function App() {
       <Aboutme />
       <MyProyects/>
       <Testimonials/>
+      <Faq/>
     </>
   );
 }
