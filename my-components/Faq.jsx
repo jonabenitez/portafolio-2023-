@@ -5,10 +5,10 @@ function Faq() {
     <section className="faq container">
       <div className="row faq__title">
         <h3 className="display-3 fw-bold">FAQ?</h3>
-        <div className="heading-line3"></div>
+        <div className="heading-line"></div>
       </div>
 
-      <p className="faq__subtitle lead">
+      <p className="faq__subtitle lead mt-2">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
 

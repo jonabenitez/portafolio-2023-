@@ -20,3 +20,12 @@
 ; left: 50%;
  transform: translate(-50%, -50%);
 }
+
+// TRANSITION PROPERTY
+// efect aspiradora para img portfolio
+
+@mixin transitionProperty{
+  transition-duration:1000ms;
+  transition-property: all;
+}
+

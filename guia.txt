@@ -277,3 +277,6 @@ COMO CREAR UN NUEVO CAROUSEL:
 3/ EL NOMBRE DE LA PERSONA
 
 ASI QUE CREAMOS 3 DIV CON ESTAS CLASES, CARD, PICTURE, NAME
+
+
+LH-LG: La altura de línea (line-height) se refiere al espacio vertical que se asigna entre las líneas de texto dentro de un elemento. Al aplicar la clase "lh-lg" a un elemento, se aumenta el espacio entre las líneas de texto, lo que puede mejorar la legibilidad y la apariencia del contenido.
