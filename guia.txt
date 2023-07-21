@@ -278,5 +278,20 @@ COMO CREAR UN NUEVO CAROUSEL:
 
 ASI QUE CREAMOS 3 DIV CON ESTAS CLASES, CARD, PICTURE, NAME
 
-
+//////////////////////////////////////////// AJUSTES //////////////////////////
 LH-LG: La altura de línea (line-height) se refiere al espacio vertical que se asigna entre las líneas de texto dentro de un elemento. Al aplicar la clase "lh-lg" a un elemento, se aumenta el espacio entre las líneas de texto, lo que puede mejorar la legibilidad y la apariencia del contenido.
+
+D-GRID: si pongo el d-grid en un componente padre, el hijo ocupara todo el largo del padre, es como si se haria una grid sin definir en que cantidad se divide por lo tanto es una sol
+
+
+                <div className="text-center d-grid mt-1">
+                  <button
+                    type="button"
+                    className="btn btn-primary rounded-pill pb-3"
+                  >
+                    submit
+                    <i>{paperPlane}</i>
+                  </button>
+                </div>
+
+                
