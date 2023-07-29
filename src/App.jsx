@@ -10,6 +10,7 @@ import Portafolio from "../my-components/Portafolio";
 import GetStarted from "../my-components/GetStarted";
 import Footer from "../my-components/Footer";
 
+
 function App() {
   return (
     <>

@@ -1,3 +1,5 @@
+import FooterSm from "../my-components/Footer-sm";
+
 function Footer() {
   let email = (
     <svg
@@ -59,7 +61,7 @@ function Footer() {
       xmlns="http://www.w3.org/2000/svg"
       className="icon icon-tabler icon-tabler-brand-github"
       viewBox="0 0 24 24"
-      strokeWidth="1"
+      strokeWidth="1.5"
       fill="none"
       strokeLinecap="round"
       strokeLinejoin="round"
@@ -71,6 +73,8 @@ function Footer() {
 
   return (
     <section className="footer" id="footer">
+      <FooterSm />
+
       <div className="container">
         <div className="row">
           {/*content for GitHub*/}
@@ -80,7 +84,8 @@ function Footer() {
               <a
                 href="https://github.com/jonabenitez "
                 target="_blank"
-                className="contact-box__info--title" rel="noreferrer"
+                className="contact-box__info--title"
+                rel="noreferrer"
               >
                 GitHub
               </a>
@@ -98,8 +103,7 @@ function Footer() {
                 className="contact-box__info--title"
                 rel="noreferrer"
               >
-                Jopolo-Italy
-              </a>
+Location              </a>
               <p className="contact-box__info--subtitle">calle falsa 123</p>
             </div>
           </div>
@@ -109,9 +113,9 @@ function Footer() {
             <div className="contact-box__icon">{linkedin}</div>
             <div className="contact-box__info">
               <a
-                href="www.linkedin.com/in/jonatan-benitez-0ab0a0107"
+                href="https://www.  linkedin.com/in/jonatan-benitez-0ab0a0107"
                 target="_blank"
-                className="contact-box__info--title"
+                className="contact-box__info--title" rel="noreferrer"
               >
                 Linkedin
               </a>
