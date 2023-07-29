@@ -32,7 +32,7 @@ const waveUp = (
 
 function Testimonials() {
   return (
-    <div className="container-fluid testimonials">
+    <div className="container-fluid testimonials id" id="testimonials">
       {waveUp}
       <div className="row text-center text-white">
         <h3 className="display-3 fw-bold">Testimonials</h3>

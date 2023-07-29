@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 function Faq() {
   return (
-    <section className="faq container">
+    <section id="faq" className="faq container">
       <div className="row faq__title">
         <h3 className="display-3 fw-bold">FAQ?</h3>
         <div className="heading-line"></div>

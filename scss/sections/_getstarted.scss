@@ -4,12 +4,11 @@
 .get-started {
   padding: 4rem 0rem;
   background-color: $gray-200;
-  
 }
 
 .cta-info {
   padding: 3rem;
-  margin: 1rem ;
+  margin: 1rem;
 
   &__list {
     position: relative;
@@ -28,15 +27,16 @@
 
 //FORM
 
-.form{
-  padding: 3rem;
-  
-  button{
+.form {
+  padding: 1rem;
+
+  button {
     border: none;
     color: $white;
   }
-  a{color:$white;
-  text-decoration: none;}
-  text-transform: capitalize;
-  
+
+  a {
+    color: $white;
+    text-transform: capitalize;
+  }
 }

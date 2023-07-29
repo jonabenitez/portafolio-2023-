@@ -17,9 +17,9 @@ function GetStarted() {
         </div>
 
         {/**SECTION INBOX*/}
-        <div className="row text-white ">
+        <div className=" row text-white ">
           <div className="col-12 col-lg-6 gradient shadow p-3">
-            <div className="cta-info w-100">
+            <div className="cta-info ">
               <h4 className="display-4 fw-bold">
                 100% Satisfaction guaranteed
               </h4>
@@ -84,6 +84,7 @@ function GetStarted() {
                     cols="30"
                     rows="8"
                     className="form-control"
+                  
                   ></textarea>
                 </div>
                 <div className="text-center d-grid mt-1">

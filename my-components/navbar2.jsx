@@ -18,22 +18,22 @@ function Home() {
                 <Nav.Link href="#home">Home</Nav.Link>
               </li>
               <li>
-                <Nav.Link href="#link">Services</Nav.Link>
+                <Nav.Link href="#services">Services</Nav.Link>
               </li>
               <li>
                 {" "}
-                <Nav.Link href="#link">Testimonials</Nav.Link>
+                <Nav.Link href="#testimonials">Testimonials</Nav.Link>
               </li>
               <li>
                 {" "}
-                <Nav.Link href="#link">Faq</Nav.Link>
+                <Nav.Link href="#faq">Faq</Nav.Link>
               </li>
               <li>
-                <Nav.Link href="#link">Portfolio</Nav.Link>
+                <Nav.Link href="#portfolio">Portfolio</Nav.Link>
               </li>
               <li>
                 {" "}
-                <Nav.Link href="#link">Contact</Nav.Link>
+                <Nav.Link href="#footer">Contact</Nav.Link>
               </li>
               <Button/>
             </Nav>

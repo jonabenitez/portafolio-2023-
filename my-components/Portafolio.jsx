@@ -7,7 +7,7 @@ import img6 from "../img/portfolio/img6.jpg";
 
 function Portafolio() {
   return (
-    <section  id="portafolio">
+    <section  id="portfolio">
       <div className="container">
         <div className="row  text-center mt-5">
           <h1 className="display-3 fw-bold">My Work</h1>
