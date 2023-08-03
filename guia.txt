@@ -295,3 +295,7 @@ D-GRID: si pongo el d-grid en un componente padre, el hijo ocupara todo el largo
                 </div>
 
                 
+DISPLAY-INLINE-BLOCK:
+estas dos propiedades son muy importante para manejar un elemento del deforme
+inline: quiere decir que se va a seleccionar todo el elemento que aparezca en el dom.
+block: con esta propiedad puedo manipular su apariencia, es tratado como un elemento mas.

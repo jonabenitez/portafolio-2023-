@@ -3,8 +3,7 @@
 @use "../components/mixins" as *;
 
 .footer {
-  background: $footer;
-  padding-top: 1rem;
+  background: $footer-sm;
 }
 
 //STYLE CONTACT-BOX  CONTENEDOR TOTAL
@@ -43,12 +42,61 @@
     }
   }
 }
-
+//FOOTER TITLE
 .footer-sm {
   position: relative;
-  background-color: $footer-sm;
+  background-color: $footer;
   text-align: center;
-  color: $white;
-  padding: 0.5rem 0.5rem;
+  padding: 2rem 0rem 1rem 0rem;
   margin-bottom: 1rem;
+
+  h4 {
+    color: $gray-300;
+    font-size: 1.5rem;
+    &:hover {
+
+      transition: transform 0.5s;
+      transform: translateY(
+        -4px
+      ); /* Cuando el cursor se coloca sobre el texto, lo desplazamos hacia arriba */
+    }
+  }
+}
+
+.FooterCampanyinfo {
+  background-color: $footer;
+  padding: 2rem 6rem 0rem 6rem;
+  h5 {
+    padding: 0;
+  }
+  hr {
+    width: 5rem;
+    height: 0.1rem;
+    padding-bottom: 0.1rem;
+  }
+  .list {
+    padding: 0;
+    text-align: left;
+    display: block;
+    position: relative;
+    list-style: none;
+
+    li {
+      padding-bottom: 0.5rem;
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}
+
+.copyright{
+  font-size: 1rem;
+  background-color: $black;
+  padding: 2.5rem 2.5rem;
 }

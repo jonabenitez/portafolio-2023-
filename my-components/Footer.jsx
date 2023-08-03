@@ -1,4 +1,4 @@
-import FooterSm from "../my-components/Footer-sm";
+import FooterCampanyinfo from "../my-components/Footer-sm";
 
 function Footer() {
   let email = (
@@ -72,70 +72,77 @@ function Footer() {
   );
 
   return (
-    <section className="footer" id="footer">
-      <FooterSm />
+    <section>
+      <div className="footer" id="footer">
+        <div className="footer-sm">
+          <h4>Connect with me on social media</h4>
+        </div>
 
-      <div className="container">
-        <div className="row">
-          {/*content for GitHub*/}
-          <div className="col-lg-3 col-md-3 contact-box pt-1 d-lg-flex d-flex d-sm-block">
-            <div className="contact-box__icon">{github}</div>
-            <div className="contact-box__info">
-              <a
-                href="https://github.com/jonabenitez "
-                target="_blank"
-                className="contact-box__info--title"
-                rel="noreferrer"
-              >
-                GitHub
-              </a>
-              <p className="contact-box__info--subtitle">jonabenitez</p>
+        <div className="container">
+          <div className="row">
+            {/*content for GitHub*/}
+            <div className="col-lg-3 col-md-3 contact-box pt-1 d-lg-flex d-flex d-sm-block col-sm-6">
+              <div className="contact-box__icon">{github}</div>
+              <div className="contact-box__info">
+                <a
+                  href="https://github.com/jonabenitez "
+                  target="_blank"
+                  className="contact-box__info--title"
+                  rel="noreferrer"
+                >
+                  GitHub
+                </a>
+                <p className="contact-box__info--subtitle">jonabenitez</p>
+              </div>
             </div>
-          </div>
 
-          {/*content for LOCATION*/}
-          <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block">
-            <div className="contact-box__icon">{location}</div>
-            <div className="contact-box__info">
-              <a
-                href="https://goo.gl/maps/whVn8XMqfxFS4hxs9"
-                target="_blank"
-                className="contact-box__info--title"
-                rel="noreferrer"
-              >
-Location              </a>
-              <p className="contact-box__info--subtitle">calle falsa 123</p>
+            {/*content for LOCATION*/}
+            <div className="col-lg-3 col-md-3 contact-box pt-1 d-flex d-lg-flex d-sm-block col-sm-6">
+              <div className="contact-box__icon">{location}</div>
+              <div className="contact-box__info">
+                <a
+                  href="https://goo.gl/maps/whVn8XMqfxFS4hxs9"
+                  target="_blank"
+                  className="contact-box__info--title"
+                  rel="noreferrer"
+                >
+                  Location{" "}
+                </a>
+                <p className="contact-box__info--subtitle">calle falsa 123</p>
+              </div>
             </div>
-          </div>
 
-          {/*content for lINKEID*/}
-          <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block">
-            <div className="contact-box__icon">{linkedin}</div>
-            <div className="contact-box__info">
-              <a
-                href="https://www.  linkedin.com/in/jonatan-benitez-0ab0a0107"
-                target="_blank"
-                className="contact-box__info--title" rel="noreferrer"
-              >
-                Linkedin
-              </a>
-              <p className="contact-box__info--subtitle">Jonatan Benitez</p>
+            {/*content for lINKEID*/}
+            <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block col-sm-6">
+              <div className="contact-box__icon">{linkedin}</div>
+              <div className="contact-box__info">
+                <a
+                  href="https://www.  linkedin.com/in/jonatan-benitez-0ab0a0107"
+                  target="_blank"
+                  className="contact-box__info--title"
+                  rel="noreferrer"
+                >
+                  Linkedin
+                </a>
+                <p className="contact-box__info--subtitle">Jonatan Benitez</p>
+              </div>
             </div>
-          </div>
 
-          {/*content for MAIL*/}
-          <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block">
-            <div className="contact-box__icon ">{email}</div>
-            <div className="contact-box__info">
-              <a href="" className="contact-box__info--title" target="_blank">
-                Email
-              </a>
-              <p className="contact-box__info--subtitle">
-                jona.benitez096@gmail.com
-              </p>
+            {/*content for MAIL*/}
+            <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block col-sm-6">
+              <div className="contact-box__icon ">{email}</div>
+              <div className="contact-box__info">
+                <a href="" className="contact-box__info--title" target="_blank">
+                  Email
+                </a>
+                <p className="contact-box__info--subtitle">
+                  jona.benitez096@gmail.com
+                </p>
+              </div>
             </div>
           </div>
         </div>
+        <FooterCampanyinfo />
       </div>
     </section>
   );

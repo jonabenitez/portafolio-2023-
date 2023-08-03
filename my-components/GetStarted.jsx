@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 
 const checkList = <FontAwesomeIcon icon={faCheck} />;
-const paperPlane = <FontAwesomeIcon icon={faPaperPlane} />;
+
+
 function GetStarted() {
   return (
     <section className="get-started">
@@ -84,16 +85,15 @@ function GetStarted() {
                     cols="30"
                     rows="8"
                     className="form-control"
-                  
                   ></textarea>
                 </div>
                 <div className="text-center d-grid mt-1">
+                  
                   <button
-                    type="button"
                     className="btn btn-primary rounded-pill pb-3"
+                    type="submit"
                   >
-                    submit
-                    <i className="p-2">{paperPlane}</i>
+                    Enviar <FontAwesomeIcon icon={faPaperPlane} />
                   </button>
                 </div>
               </form>
