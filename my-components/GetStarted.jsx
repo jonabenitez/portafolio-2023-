@@ -1,10 +1,19 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck, faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-
+import { useForm } from "react-hook-form";
 const checkList = <FontAwesomeIcon icon={faCheck} />;
 
+const GetStarted = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-function GetStarted() {
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <section className="get-started">
       <div className="container">
@@ -51,14 +60,20 @@ function GetStarted() {
           <div className="col-12 col-lg-6 bg-white shadow p-3">
             <div className="form w-100 pb-2">
               <h4 className="display-3--title mb-5">Start Your Project</h4>
-              <form action="#" className="row ">
+
+              <form onSubmit={handleSubmit(onSubmit)} className="row ">
                 <div className="col-lg-6 mb-3">
                   <input
                     type="text"
-                    placeholder="FirsName"
+                    placeholder="FirstName"
                     id="inputFirsName"
                     className="form-control form-control-lg"
+                    {...register("FirstName", { required: true })}
                   />
+
+                  {errors.FirstName?.type === "required" && (
+                    <p className="warning">el campo es requerido</p>
+                  )}
                 </div>
                 <div className="col-lg-6 mb-3 ">
                   <input
@@ -66,7 +81,11 @@ function GetStarted() {
                     placeholder="LastName"
                     id="inputLastName"
                     className="form-control form-control-lg"
+                    {...register("LastName", { required: true })}
                   />
+                  {errors.LastName?.type === "required" && (
+                    <p className="warning">el campo es requerido</p>
+                  )}
                 </div>
 
                 <div className="mb-3">
@@ -75,20 +94,31 @@ function GetStarted() {
                     placeholder="email"
                     id="inpuEmail"
                     className="form-control form-control-lg"
+                    {...register("email", {
+                      pattern: /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/,
+                    })}
                   />
+                  {errors.email?.type === "pattern" && (
+                    <p className="warning">el formato del email es invalido</p>
+                  )}
                 </div>
                 <div className="mb-3">
                   <textarea
-                    placeholder="message"
+                    placeholder="Message"
                     name="Message"
-                    id="message"
+                    id="Message"
                     cols="30"
                     rows="8"
                     className="form-control"
+                    {...register("Message", { maxLength: 100 })}
                   ></textarea>
+                  {errors.Message?.type === "maxLength" && (
+                    <span className="warning">
+                      el campo es debetener menos de 100 caracteres
+                    </span>
+                  )}
                 </div>
                 <div className="text-center d-grid mt-1">
-                  
                   <button
                     className="btn btn-primary rounded-pill pb-3"
                     type="submit"
@@ -103,6 +133,6 @@ function GetStarted() {
       </div>
     </section>
   );
-}
+};
 
 export default GetStarted;
