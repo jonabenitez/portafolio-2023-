@@ -3,7 +3,6 @@ import Home from "../my-components/navbar2";
 import Section1 from "../my-components/Intro-section";
 import Tecnologies from "../my-components/Tecnologies";
 import Aboutme from "../my-components/About-me";
-import MyProyects from "../my-components/MyProyects";
 import Testimonials from "../my-components/Testimonials";
 import Faq from "../my-components/Faq";
 import Portafolio from "../my-components/Portafolio";
@@ -18,10 +17,9 @@ function App() {
       <Section1 />
       <Tecnologies />
       <Aboutme />
-      <MyProyects />
+      <Portafolio />
       <Testimonials />
       <Faq />
-      <Portafolio />
       <GetStarted />
       <Footer />
     </>

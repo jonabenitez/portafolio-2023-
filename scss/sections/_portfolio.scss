@@ -13,7 +13,7 @@
   margin-bottom: 1.2rem;
   overflow: hidden;
   border-top: 0.5rem solid $primary;
-
+ 
   img {
     height: 100%;
     width: 100%;
@@ -44,6 +44,7 @@
       opacity: 1;
       visibility: visible;
       @include transitionProperty;
+      cursor: pointer;
     }
   }
 }

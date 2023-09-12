@@ -7,7 +7,7 @@ import img6 from "../img/portfolio/img6.jpg";
 
 function Portafolio() {
   return (
-    <section  id="portfolio">
+    <section id="portfolio">
       <div className="container">
         <div className="row  text-center mt-5">
           <h1 className="display-3 fw-bold">My Work</h1>
@@ -35,31 +35,45 @@ function Portafolio() {
           </button>
         </div>
         {/** START PORTFOLIO IMG */}
-        <div className="portafolio row"
-        >
+        <div className="portafolio row">
           <div className="col-lg-4 col-md-6">
             <div className="portfolio-box shadow">
-              <img className="img-fluid" src={img1} alt="imagen1" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>project category 1</h3>
-                  <p> description project</p>
+              <a
+                href="https://italiatravelsinglepage.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="img-fluid" src={img1} alt="imagen1" />
+                <div className="portafolio-info">
+                  <div className="caption">
+                    <h3>Mi primer singlepage</h3>
+                    <p>
+                      Singlepage destinada a buscar nuevos clientes y se
+                      contacten por medio de las redes realizada con react y tailwild
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
           <div className="col-lg-4 col-md-6">
             <div className="portfolio-box shadow">
-              <img className="img-fluid" src={img2} alt="imagen2" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>project category 2</h3>
-                  <p> description project</p>
+              <a
+                href="https://todo-list-react-1006.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="img-fluid" src={img2} alt="imagen2" />
+                <div className="portafolio-info">
+                  <div className="caption">
+                    <h3>To do List React</h3>
+                    <p>
+                     lista de tareas realizada con los fundamentos y hooks de react y tailwild. 
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
@@ -69,8 +83,12 @@ function Portafolio() {
 
               <div className="portafolio-info">
                 <div className="caption">
-                  <h3>project category 3</h3>
-                  <p> description project</p>
+                  <h3>Mi remasterizacion de la primer Website</h3>
+                  <p>
+                    {" "}
+                    Este es el nuevo proyecto de mi primer singlePage, realizado
+                    con React,Js y Tailwild
+                  </p>
                 </div>
               </div>
             </div>
@@ -82,8 +100,12 @@ function Portafolio() {
 
               <div className="portafolio-info">
                 <div className="caption">
-                  <h3>project category 4</h3>
-                  <p> description project</p>
+                  <h3>Tasks List con React</h3>
+                  <p>
+                    {" "}
+                    Proyecyo realizado con react fundamentalmente, utiza hooks y
+                    tailwild como framework de css.
+                  </p>
                 </div>
               </div>
             </div>
