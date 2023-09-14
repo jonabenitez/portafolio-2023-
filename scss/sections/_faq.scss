@@ -11,3 +11,27 @@
     padding-bottom: 2rem;
   }
 }
+
+.my-botton {
+  border: none;
+  margin-bottom: 0rem;
+  padding: 2rem;
+  background-color: white;
+  width: 100%;
+  text-align: start;
+  font-size: 1rem;
+  color: $primary;
+  background-color: $gray-200;
+
+  &:hover {
+    background-color: $gray-400;
+  }
+
+  span {
+    float: right;
+  }
+}
+
+.my-content-button{
+border: $gray-500 solid 0.1rem;
+}

@@ -1,4 +1,4 @@
-import Accordion from "react-bootstrap/Accordion";
+import ButtonAcordeon from "./Button-acordeon";
 
 function Faq() {
   return (
@@ -8,12 +8,12 @@ function Faq() {
         <div className="heading-line"></div>
       </div>
 
-      <p className="faq__subtitle lead mt-2">
+      <p className="faq__subtitle lead mt-2 ">
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </p>
-
-      <Accordion defaultActiveKey="0">
-        <Accordion.Item eventKey="0">
+      <ButtonAcordeon />
+      {/* <Accordion className="buttonACordeon">
+        <Accordion.Item>
           <Accordion.Header>Accordion Item #1</Accordion.Header>
           <Accordion.Body>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -25,6 +25,7 @@ function Faq() {
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
+
         <Accordion.Item eventKey="1">
           <Accordion.Header>Accordion Item #2</Accordion.Header>
           <Accordion.Body>
@@ -37,8 +38,8 @@ function Faq() {
             culpa qui officia deserunt mollit anim id est laborum.
           </Accordion.Body>
         </Accordion.Item>
-      </Accordion>
-    </section>
+      </Accordion>*/}
+    </section> 
   );
 }
 

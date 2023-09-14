@@ -72,6 +72,7 @@ function Footer() {
   );
 
   return (
+
     <section>
       <div className="footer" id="footer">
         <div className="footer-sm">
@@ -80,6 +81,7 @@ function Footer() {
 
         <div className="container">
           <div className="row">
+
             {/*content for GitHub*/}
             <div className="col-lg-3 col-md-3 contact-box pt-1 d-lg-flex d-flex d-sm-block col-sm-6">
               <div className="contact-box__icon">{github}</div>
@@ -117,7 +119,7 @@ function Footer() {
               <div className="contact-box__icon">{linkedin}</div>
               <div className="contact-box__info">
                 <a
-                  href="https://www.  linkedin.com/in/jonatan-benitez-0ab0a0107"
+                  href="https://www.linkedin.com/in/jonatan-benitez-0ab0a0107"
                   target="_blank"
                   className="contact-box__info--title"
                   rel="noreferrer"
@@ -142,7 +144,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <FooterCampanyinfo />
+<FooterCampanyinfo/>
       </div>
     </section>
   );

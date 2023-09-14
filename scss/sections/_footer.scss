@@ -64,8 +64,10 @@
 }
 
 .FooterCampanyinfo {
+  position: relative;
   background-color: $footer;
-  padding: 2rem 6rem 0rem 6rem;
+  text-align: center;
+  width: auto;
   h5 {
     padding: 0;
   }

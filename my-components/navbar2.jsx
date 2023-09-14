@@ -13,7 +13,7 @@ function Home() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <ul>
-            <Nav className="me-auto">
+            <Nav className="">
               <li>
                 <Nav.Link href="#home">Home</Nav.Link>
               </li>

@@ -1,7 +1,7 @@
 import Copyright from "./Copyright";
 function FooterCampanyinfo() {
   return (
-    <section className="">
+    <section className="container-fluid">
       <div className="FooterCampanyinfo row justify-content-center text-white mt-3 pb-2">
         <div className="col-12 col-sm-6 col-lg-6">
           <h5 className="text-capitalize fw-bold"> companies name</h5>
