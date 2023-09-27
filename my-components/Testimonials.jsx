@@ -106,7 +106,7 @@ function Testimonials() {
           </div>
           {/**client-name */}
           <div className="testimonials__name">
-            <h3>Ana Franca</h3>
+            <h3>Carlos Gomez</h3>
             <p className="lead fw-light">La Casa de Ana</p>
           </div>
         </Carousel.Item>
