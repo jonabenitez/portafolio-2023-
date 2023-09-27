@@ -3,10 +3,10 @@ import { faPhoneVolume } from "@fortawesome/free-solid-svg-icons";
 
 const iconsCall = <FontAwesomeIcon icon={faPhoneVolume} />;
 
- function Button() {
+function Button() {
   return (
     <button type="button" className="rounded-pill btn-rounded">
-      +341 123 45678
+      +34 618720191
       <span>
         <a href="/">{iconsCall}</a>
       </span>
@@ -14,5 +14,4 @@ const iconsCall = <FontAwesomeIcon icon={faPhoneVolume} />;
   );
 }
 
-
-export default Button
+export default Button;

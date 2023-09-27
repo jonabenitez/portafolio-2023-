@@ -2,8 +2,7 @@
 @use "../components/mixins" as *;
 
 .portafolio {
-    padding: 1rem 4rem 0rem 4rem;
-  text-transform: capitalize;
+  padding: 1rem 4rem 0rem 4rem;
 }
 
 .portfolio-box {
@@ -13,7 +12,7 @@
   margin-bottom: 1.2rem;
   overflow: hidden;
   border-top: 0.5rem solid $primary;
- 
+
   img {
     height: 100%;
     width: 100%;
@@ -30,13 +29,13 @@
     opacity: 0;
     visibility: hidden;
   }
-  .caption {            
+  .caption {
     color: $white;
     @include absoluteCenter;
-
+    
     h3 {
-      text-transform: uppercase;
       display: block;
+      text-transform: uppercase;
     }
   }
   &:hover {
@@ -48,4 +47,3 @@
     }
   }
 }
-

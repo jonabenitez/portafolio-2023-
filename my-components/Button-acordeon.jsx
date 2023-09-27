@@ -1,9 +1,10 @@
 import { useState, useRef } from "react";
 
-function ButtonAcordeon() {
+function ButtonAcordeon({title, text}) {
   //referencias
   let refButton = useRef();
 
+  //manejador del estado
   const [Visible, setVisible] = useState(false);
   const HandleState = () => {
     setVisible(!Visible);
@@ -14,26 +15,19 @@ function ButtonAcordeon() {
     }
   };
   return (
-    <div className="my-content-button">
-      <h2>
-        <button onClick={HandleState} className="my-botton" type="button">
-          Accordion Item #1
-          <span ref={refButton}>
-            abrir
-          </span>
-        </button>
-      </h2>
+    <div className="mycontainer">
+      <button className="my-botton" onClick={HandleState}>
+        <div className="title-botton">
+          <h3> {title}</h3>
+          <span ref={refButton}>abrir</span>
+        </div>
+      </button>
+
       <div>
         {Visible && (
-          <div>
-            <strong>This is the first items accordion body.</strong> It is shown
-            by default, until the collapse plugin adds the appropriate classes
-            that we use to style each element. These classes control the overall
-            appearance, as well as the showing and hiding via CSS transitions.
-            You can modify any of this with custom CSS or overriding our default
-            variables. Its also worth noting that just about any HTML can go
-            within the <code>.accordion-body</code>, though the transition does
-            limit overflow.
+          <div className="text-container">
+        <p dangerouslySetInnerHTML={{ __html: text }} />
+
           </div>
         )}
       </div>
@@ -41,3 +35,5 @@ function ButtonAcordeon() {
   );
 }
 export default ButtonAcordeon;
+
+

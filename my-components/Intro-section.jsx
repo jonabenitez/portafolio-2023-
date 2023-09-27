@@ -1,13 +1,14 @@
 //import  icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhoneVolume, faCirclePlay } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay, faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 //imports img
 import CodingFlatline from "../img/arts/Coding _Monochromatic.png";
 
 //variables icons
-const iconsCall = <FontAwesomeIcon icon={faPhoneVolume} />;
 const iconsPlay = <FontAwesomeIcon icon={faCirclePlay} />;
+const iconsArrow = <FontAwesomeIcon icon={faArrowDown} />
+
 const wave = (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
     <path
@@ -15,6 +16,8 @@ const wave = (
       d="M0,288L40,293.3C80,299,160,309,240,282.7C320,256,400,192,480,170.7C560,149,640,171,720,197.3C800,224,880,256,960,250.7C1040,245,1120,203,1200,192C1280,181,1360,203,1400,213.3L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
     ></path>
   </svg>
+
+  
 );
 //intro section
 
@@ -26,19 +29,17 @@ function Section1() {
           {/*PRIMER COLUMNS CONTENT INTRO*/}
           <div className="col-md-6 intros">
             <h1 className="display-2">
-              <span className="display-2--intro">Hi!, I am Jonatan</span>
+              <span className="display-2--intro">Hola!, soy Jonatan</span>
               <span className="display-2--description lh-base">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                libero deserunt sequi, odit, totam iusto iste ipsam quo non nemo
-                voluptatibus itaque a maiores, officiis qui voluptas inventore
-                quidem ipsa!
+                Bienvenidos a mi Portfolio, el cuál está desarrollado con las tecnologías de JavaScript, React, Boostrap y Sass. Además de algunas librerías para la tipografía como Font Awesome.
               </span>
             </h1>
-            <button type="button" className="rounded-pill btn-rounded">
-              Get in Touch
+            <button type="button" className="rounded-pill btn-rounded ">
+              {/* CORREGIR BOTON */}
+              Click aquí
               <span>
-                <a href="/">{iconsCall}</a>
+                <a href="#aboutMe">{iconsArrow}</a>
               </span>
             </button>
 
@@ -61,9 +62,7 @@ function Section1() {
           </div>
         </div>
       </div>
-      <div>
-      {wave}
-      </div>
+      <div>{wave}</div>
     </section>
   );
 }

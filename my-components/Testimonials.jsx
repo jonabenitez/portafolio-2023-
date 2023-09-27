@@ -6,7 +6,6 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 
 import client1 from "../img/testimonials/client-1.jpg";
 import client2 from "../img/testimonials/client-2.jpg";
-import client3 from "../img/testimonials/client-3.jpg";
 
 const iconStar = <FontAwesomeIcon icon={faStar} />;
 const quoteLeft = <FontAwesomeIcon icon={faQuoteLeft} />;
@@ -32,12 +31,14 @@ const waveUp = (
 
 function Testimonials() {
   return (
-    <div className="container-fluid testimonials id" id="testimonials">
+    <div className="container-fluid testimonials">
       {waveUp}
       <div className="row text-center text-white">
-        <h3 className="display-3 fw-bold">Testimonials</h3>
+        <h3 id="testimonials" className="display-3 fw-bold">
+          Testimonios
+        </h3>
         <div className="heading-line2 mx-auto"></div>
-        <p className="lead pt-1">What out clients are saying</p>
+        <p className="lead pt-1">¿Qué dicen mis clientes?</p>
       </div>
 
       {/**CAROUSEL */}
@@ -48,10 +49,9 @@ function Testimonials() {
           <div className="testimonials__card">
             <p>
               <i>{quoteLeft}</i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              necessitatibus autem atque natus neque commodi dolorum, nulla
-              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
-              repellat natus excepturi aut.
+              Excelente trabajo realizado en tiempo y forma, cumpliendo con las
+              consignas demandadas. Muy buena predisposición a realizar cambios y
+              modificaciones de manera amable.
               <i>{quoteRight}</i>
             </p>
             <div className="ratings col p-1">
@@ -74,7 +74,7 @@ function Testimonials() {
           {/**client-name */}
           <div className="testimonials__name">
             <h3>Luz Diaz</h3>
-            <p className="lead fw-light">marketing managger</p>
+            <p className="lead fw-light">Animate a Emigrar</p>
           </div>
         </Carousel.Item>
 
@@ -83,10 +83,8 @@ function Testimonials() {
           <div className="testimonials__card">
             <p>
               <i>{quoteLeft}</i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              necessitatibus autem atque natus neque commodi dolorum, nulla
-              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
-              repellat natus excepturi aut.
+              Jonatan fue muy profesional. Tuvo una gran atención al detalle donde conseguí generar mayor contactos, lo que me permitió introducir mi negocio en el mundo digital. Gracias a ésto pude aumentar notablemente mis ingresos. 
+              
               <i>{quoteRight}</i>
             </p>
             <div className="ratings col p-1">
@@ -108,45 +106,11 @@ function Testimonials() {
           </div>
           {/**client-name */}
           <div className="testimonials__name">
-          <h3>Martin Benitez</h3>
-          <p className="lead fw-light"> CEO & founder </p>
+            <h3>Ana Franca</h3>
+            <p className="lead fw-light">La Casa de Ana</p>
           </div>
         </Carousel.Item>
 
-        {/**CLIENT 3 */}
-        <Carousel.Item>
-          <div className="testimonials__card">
-            <p>
-              <i>{quoteLeft}</i>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-              necessitatibus autem atque natus neque commodi dolorum, nulla
-              impedit facere veniam est, dignissimos, amet ad. Recusandae enim
-              repellat natus excepturi aut.
-              <i>{quoteRight}</i>
-            </p>
-            <div className="ratings col p-1">
-              <i>{iconStar}</i>
-              <i>{iconStar}</i>
-              <i>{iconStar}</i>
-              <i>{iconStar}</i>
-            </div>
-          </div>
-          {/**client-img */}
-          <div className="first-slide">
-            <div className="testimonials__picture">
-              <img
-                src={client3}
-                alt="client3"
-                className="img-fluid rounded-circle"
-              />
-            </div>
-          </div>
-          {/**client-name */}
-          <div className="testimonials__name">
-          <h3>Luz Diaz</h3>
-          <p className="lead fw-light">global brand managger </p>
-          </div>
-        </Carousel.Item>
       </Carousel>
       {waveDown}
     </div>

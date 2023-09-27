@@ -74,9 +74,9 @@ function Footer() {
   return (
 
     <section>
-      <div className="footer" id="footer">
+      <div className="footer" id="contact">
         <div className="footer-sm">
-          <h4>Connect with me on social media</h4>
+          <h4 className="display-footer--subtitle">Contactame por mis redes sociales</h4>
         </div>
 
         <div className="container">
@@ -110,7 +110,7 @@ function Footer() {
                 >
                   Location{" "}
                 </a>
-                <p className="contact-box__info--subtitle">calle falsa 123</p>
+                <p className="contact-box__info--subtitle">Barcelona - España</p>
               </div>
             </div>
 
@@ -134,7 +134,7 @@ function Footer() {
             <div className="col-lg-3 col-md-3 contact-box pt-1  d-lg-flex d-flex d-sm-block col-sm-6">
               <div className="contact-box__icon ">{email}</div>
               <div className="contact-box__info">
-                <a href="" className="contact-box__info--title" target="_blank">
+                <a href="https://www.google.com/intl/es/gmail/about" className="contact-box__info--title">
                   Email
                 </a>
                 <p className="contact-box__info--subtitle">

@@ -17,13 +17,10 @@ const GetStarted = () => {
   return (
     <section className="get-started">
       <div className="container">
-        <div className="row text-center">
-          <h1 className="display-3 text-capitalize fw-bold">Get Started</h1>
-          <div className="heading-line"></div>
-          <p className="lh-lg fw-light">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
-            deleniti, aliquid quae itaque
-          </p>
+        <div id="getstarted"  className="row text-center">
+          <h1 className="display-3 text-capitalize fw-bold">Iniciemos juntos!</h1>
+          <div className="heading-line pb-5"></div>
+          
         </div>
 
         {/**SECTION INBOX*/}
@@ -31,27 +28,25 @@ const GetStarted = () => {
           <div className="col-12 col-lg-6 gradient shadow p-3">
             <div className="cta-info ">
               <h4 className="display-4 fw-bold">
-                100% Satisfaction guaranteed
+                100% Satisfacción Garantizada 
               </h4>
               <p className="lh-lg">
                 {" "}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident deserunt delectus volupta um dolor sit amet
-                consectetur adipisicing elit. Provident deserunt delectus volupt
+                ¿Te gustaría tener una página web para tu negocio y potenciar tus ventas pero no sabés por dónde empezar? Estás en el lugar correcto.
               </p>
-              <h3 className="display-3--brief">What will the next step?</h3>
+              <h3 className="display-3--brief">¿Cuál es el siguiente paso?</h3>
               <ul className="cta-info__list">
                 <li>
                   {" "}
-                  <span>{checkList}</span> lorem ipsum
+                  <span>{checkList}</span> Envíame tu idea
                 </li>
                 <li>
                   {" "}
-                  <span>{checkList}</span> lorem ipsum
+                  <span>{checkList}</span> Armemos un plan juntos
                 </li>
                 <li>
                   {" "}
-                  <span>{checkList}</span> lorem ipsum
+                  <span>{checkList}</span> Hagámoslo realidad
                 </li>
               </ul>
             </div>
@@ -59,16 +54,16 @@ const GetStarted = () => {
           {/**SECOND COLUM - FORM */}
           <div className="col-12 col-lg-6 bg-white shadow p-3">
             <div className="form w-100 pb-2">
-              <h4 className="display-3--title mb-5">Start Your Project</h4>
+              <h4 className="display-3--title mb-5">Inicia tu proyecto</h4>
 
               <form onSubmit={handleSubmit(onSubmit)} className="row ">
                 <div className="col-lg-6 mb-3">
                   <input
                     type="text"
-                    placeholder="FirstName"
+                    placeholder="Nombre"
                     id="inputFirsName"
                     className="form-control form-control-lg"
-                    {...register("FirstName", { required: true })}
+                    {...register("Nombre", { required: true })}
                   />
 
                   {errors.FirstName?.type === "required" && (
@@ -78,10 +73,10 @@ const GetStarted = () => {
                 <div className="col-lg-6 mb-3 ">
                   <input
                     type="text"
-                    placeholder="LastName"
+                    placeholder="Apellido"
                     id="inputLastName"
                     className="form-control form-control-lg"
-                    {...register("LastName", { required: true })}
+                    {...register("Apellido", { required: true })}
                   />
                   {errors.LastName?.type === "required" && (
                     <p className="warning">el campo es requerido</p>
@@ -104,13 +99,13 @@ const GetStarted = () => {
                 </div>
                 <div className="mb-3">
                   <textarea
-                    placeholder="Message"
-                    name="Message"
-                    id="Message"
+                    placeholder="Mensaje"
+                    name="Mensaje"
+                    id="Mensaje"
                     cols="30"
                     rows="8"
                     className="form-control"
-                    {...register("Message", { maxLength: 100 })}
+                    {...register("Mensaje", { maxLength: 100 })}
                   ></textarea>
                   {errors.Message?.type === "maxLength" && (
                     <span className="warning">

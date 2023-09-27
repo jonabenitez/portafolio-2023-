@@ -15,16 +15,17 @@
       @include media-breakpoint-down(lg) {
         padding-left: 0px;
       }
-      padding: 1.57rem 1rem 0rem 1rem;
-
+      padding: 1.57rem 0.3rem 0rem 0.3rem;
+      
       a {
-        padding: 0 0.7rem; 
+        padding: 0 0.2rem;
         // 0 para lo superior e inferior, 0,7 para izq y dere.
         color: $white;
         text-transform: capitalize;
         font-weight: 600;
+        font-size: 2 rem;
+        font-size: 1.2 rem;
       }
     }
   }
 }
-

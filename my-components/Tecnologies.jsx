@@ -3,11 +3,11 @@ import BaseImg from "../base/base-img";
 
 function Tecnologies() {
   return (
-    <section className="companies">
+    <section id="tecnologies">
       {/**TITTLE CONTENT */}
       <div className="container">
         <div className="text-center">
-          <h3 className="fw-bold display-3">Technologies for now</h3>
+          <h3 className="fw-bold display-3">Tecnologías</h3>
           <div className="heading-line"></div>
         </div>
       </div>

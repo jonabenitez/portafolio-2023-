@@ -43,7 +43,7 @@
   background: $primary;
 }
 
-.heading-line2{
+.heading-line2 {
   display: block;
   content: "";
   width: 8rem;
@@ -51,7 +51,7 @@
   background: gray;
 }
 
-.heading-line3::before{
+.heading-line3::before {
   display: block;
   content: "";
   background: $primary;
@@ -60,14 +60,13 @@
   width: 10rem;
 }
 
-.heading-line3::after{
+.heading-line3::after {
   display: block;
-  content: '';
+  content: "";
   background-color: $primary;
   margin: 0 auto;
   height: 0.3rem;
   width: 2rem;
-
 }
 
 .display-3 {
@@ -76,8 +75,9 @@
   font-family: "Poppins", sans-serif;
   font-size: 2.5rem;
 
-  @include media-breakpoint-up(lg){
-    font-size:  3.5rem; }
+  @include media-breakpoint-up(lg) {
+    font-size: 3.5rem;
+  }
 
   //my proyects-h3
   &--title {
@@ -86,14 +86,13 @@
     text-transform: capitalize;
     font-weight: 600;
     display: inline-block;
-    background-image: linear-gradient(to right,$primary,$secondary);    
+    background-image: linear-gradient(to right, $primary, $secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
-    @include media-breakpoint-up(lg){
-      font-size:  2rem; }
-
-    
+    @include media-breakpoint-up(lg) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -109,4 +108,33 @@
     rgba($primary, 0.95),
     rgba($secondary, 0.96)
   );
+}
+
+
+
+.display-footer {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 3.5rem;
+  }
+
+  //my proyects-h3
+  &--subtitle {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    display: inline-block;
+    background-image: linear-gradient(to right, $primary, $secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.2rem;
+    }
+  }
 }

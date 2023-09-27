@@ -11,31 +11,32 @@ function Home() {
           Jonatan G Benitez
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end ">
           <ul>
-            <Nav className="">
+            <Nav>
               <li>
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home">Inicio</Nav.Link>
               </li>
               <li>
-                <Nav.Link href="#services">Services</Nav.Link>
+                <Nav.Link href="#tecnologies">Tecnologías</Nav.Link>
               </li>
+
               <li>
                 {" "}
-                <Nav.Link href="#testimonials">Testimonials</Nav.Link>
-              </li>
-              <li>
-                {" "}
-                <Nav.Link href="#faq">Faq</Nav.Link>
+                <Nav.Link href="#aboutMe">Sobre mi</Nav.Link>
               </li>
               <li>
                 <Nav.Link href="#portfolio">Portfolio</Nav.Link>
               </li>
               <li>
                 {" "}
-                <Nav.Link href="#footer">Contact</Nav.Link>
+                <Nav.Link href="#testimonials">Testimonios</Nav.Link>
               </li>
-              <Button/>
+              <li>
+                {" "}
+                <Nav.Link href="#contact">Contacto</Nav.Link>
+              </li>
+              <Button />
             </Nav>
           </ul>
         </Navbar.Collapse>

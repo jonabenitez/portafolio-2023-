@@ -4,10 +4,10 @@ import Section1 from "../my-components/Intro-section";
 import Tecnologies from "../my-components/Tecnologies";
 import Aboutme from "../my-components/About-me";
 import Testimonials from "../my-components/Testimonials";
-import Faq from "../my-components/Faq";
 import Portafolio from "../my-components/Portafolio";
 import GetStarted from "../my-components/GetStarted";
 import Footer from "../my-components/Footer";
+import Faq from "../my-components/Preguntas";
 
 
 function App() {
@@ -15,11 +15,11 @@ function App() {
     <>
       <Home />
       <Section1 />
-      <Tecnologies />
       <Aboutme />
+      <Faq />
+      <Tecnologies />
       <Portafolio />
       <Testimonials />
-      <Faq />
       <GetStarted />
       <Footer />
     </>

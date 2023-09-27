@@ -2,25 +2,24 @@ import img1 from "../img/portfolio/img1.jpg";
 import img2 from "../img/portfolio/img2.jpg";
 import img3 from "../img/portfolio/img3.jpg";
 import img4 from "../img/portfolio/img4.jpg";
-import img5 from "../img/portfolio/img5.jpg";
-import img6 from "../img/portfolio/img6.jpg";
 
 function Portafolio() {
   return (
     <section id="portfolio">
       <div className="container">
         <div className="row  text-center mt-5">
-          <h1 className="display-3 fw-bold">My Work</h1>
+          <h1 className="display-3 fw-bold">Mis trabajos</h1>
           <div className="heading-line"></div>
           <p className="lead mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas fugia
+            Conoce los trabajos que he realizado de forma freelance y
+            autodidacta.
           </p>
         </div>
       </div>
 
-      {/**FILTER BOTTON */}
-      <div className="row mt-2 g-1 text-center">
-        <div className="col-md-12">
+      <div className="row mt-2 g-1 text-center px-5">
+        {/**FILTER BOTTON */}
+        {/* <div className="col-md-12">
           <button className="btn btn-outline-primary " type="button">
             All
           </button>
@@ -33,10 +32,12 @@ function Portafolio() {
           <button className="btn btn-outline-primary " type="button">
             Api
           </button>
-        </div>
+        </div> */}
+
         {/** START PORTFOLIO IMG */}
+
         <div className="portafolio row">
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
               <a
                 href="https://italiatravelsinglepage.netlify.app/"
@@ -46,10 +47,11 @@ function Portafolio() {
                 <img className="img-fluid" src={img1} alt="imagen1" />
                 <div className="portafolio-info">
                   <div className="caption">
-                    <h3>Mi primer singlepage</h3>
+                    <h3>Singlepage</h3>
                     <p>
-                      Singlepage destinada a buscar nuevos clientes y se
-                      contacten por medio de las redes realizada con react y tailwild
+                      Página web destinada a atraer nuevos clientes y generar un
+                      primer contacto por medio de las redes sociales. Fue
+                      realizada con React y Tailwild.
                     </p>
                   </div>
                 </div>
@@ -57,7 +59,7 @@ function Portafolio() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
               <a
                 href="https://todo-list-react-1006.netlify.app/"
@@ -67,9 +69,10 @@ function Portafolio() {
                 <img className="img-fluid" src={img2} alt="imagen2" />
                 <div className="portafolio-info">
                   <div className="caption">
-                    <h3>To do List React</h3>
+                    <h3>To do List</h3>
                     <p>
-                     lista de tareas realizada con los fundamentos y hooks de react y tailwild. 
+                      Lista de tareas realizada con los fundamentos básicos y
+                      hooks de React y Tailwild.
                     </p>
                   </div>
                 </div>
@@ -77,61 +80,33 @@ function Portafolio() {
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
               <img className="img-fluid" src={img3} alt="imagen3" />
 
               <div className="portafolio-info">
                 <div className="caption">
-                  <h3>Mi remasterizacion de la primer Website</h3>
+                  <h3>Color Game</h3>
                   <p>
                     {" "}
-                    Este es el nuevo proyecto de mi primer singlePage, realizado
-                    con React,Js y Tailwild
+                    Juego realizado con JavaScript Vanilla
                   </p>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="col-lg-4 col-md-6">
+          <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
               <img className="img-fluid" src={img4} alt="imagen4" />
 
               <div className="portafolio-info">
                 <div className="caption">
-                  <h3>Tasks List con React</h3>
+                  <h3>Ecommerce</h3>
                   <p>
-                    {" "}
-                    Proyecyo realizado con react fundamentalmente, utiza hooks y
-                    tailwild como framework de css.
+                    Proyecto en proceso con React y aplicacion de Hooks
+                    avanzados.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="portfolio-box shadow">
-              <img className="img-fluid" src={img5} alt="imagen5" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>project category 5</h3>
-                  <p> description project</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-lg-4 col-md-6">
-            <div className="portfolio-box shadow">
-              <img className="img-fluid" src={img6} alt="imagen6" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>project category 6</h3>
-                  <p> description project</p>
                 </div>
               </div>
             </div>
