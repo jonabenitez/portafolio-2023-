@@ -82,6 +82,7 @@ function Portafolio() {
 
           <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
+              <a href="https://ecommerce-react2023.netlify.app/"></a>
               <img className="img-fluid" src={img3} alt="imagen3" />
 
               <div className="portafolio-info">
@@ -98,6 +99,7 @@ function Portafolio() {
 
           <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
+              <a href="https://ecommerce-react2023.netlify.app/"></a>
               <img className="img-fluid" src={img4} alt="imagen4" />
 
               <div className="portafolio-info">
