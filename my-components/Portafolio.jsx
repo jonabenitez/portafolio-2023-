@@ -80,39 +80,48 @@ function Portafolio() {
             </div>
           </div>
 
+
           <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
-              <a href="https://ecommerce-react2023.netlify.app/"></a>
-              <img className="img-fluid" src={img3} alt="imagen3" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>Color Game</h3>
-                  <p>
-                    {" "}
-                    Juego realizado con JavaScript Vanilla
-                  </p>
+              <a
+                href="https://ecommerce-react2023.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="img-fluid" src={img4} alt="imagen2" />
+                <div className="portafolio-info">
+                  <div className="caption">
+                    <h3>Ecommerce</h3>
+                    <p>
+                   Ecommerce y Carrito de compras, realizado con React y uso de Hooks.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
           <div className="col-lg-6 col-md-6">
             <div className="portfolio-box shadow">
-              <a href="https://ecommerce-react2023.netlify.app/"></a>
-              <img className="img-fluid" src={img4} alt="imagen4" />
-
-              <div className="portafolio-info">
-                <div className="caption">
-                  <h3>Ecommerce</h3>
-                  <p>
-                    Proyecto en proceso con React y aplicacion de Hooks
-                    avanzados.
-                  </p>
+              <a
+                href="https://ecommerce-react2023.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img className="img-fluid" src={img3} alt="imagen2" />
+                <div className="portafolio-info">
+                  <div className="caption">
+                    <h3>ColorGame</h3>
+                    <p>
+                  Juego realizado con JS Vanilla.
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
+
+ 
         </div>
       </div>
     </section>
